@@ -6,4 +6,16 @@
 // a = 9, b = -3 -> да
 // a = -3 b = 9 -> нет
 
-Console.WriteLine("Введите два целых числа")
+Console.Write("Введите первое число: ");                          // Обращение к пользователю
+int numberA = Convert.ToInt32(Console.ReadLine());                // вводим целое значение
+Console.Write("Введите второе число: ");
+int numberB = Convert.ToInt32(Console.ReadLine());
+if (numberA == numberB * numberB)                                 //вводим сравнение через оператора if/ можно добавить сравнение через |
+{
+    Console.WriteLine("Да");
+}
+else
+{
+    Console.WriteLine("Нет");
+}
+
